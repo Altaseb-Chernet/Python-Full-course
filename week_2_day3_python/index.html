@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .moon{
+            background-color: #1e272e;
+            width: 250px;
+            height: 250px;
+            position: relative;
+            border-radius: 50%;
+
+        }
+        .moon::before {
+            content: '';
+            background-color: #ffffff;
+            position: absolute;
+            display: block;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            border-radius: 50%;
+            animation: 3s moon linear infinite alternate;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+<div class="moon"></div>
+</body>
+</html>
