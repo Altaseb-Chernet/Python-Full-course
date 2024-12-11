@@ -1,3 +1,2 @@
-name='abebe'
-print(name.capitalize())
+class am
           
